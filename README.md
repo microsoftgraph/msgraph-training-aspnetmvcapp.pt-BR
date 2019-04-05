@@ -30,14 +30,15 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 |        Funções         |                            Autor (es)                             |
 | -------------------- | ---------------------------------------------------------------- |
-| Manuais/slides do laboratório | Andrew Connell (Microsoft MVP, Voitanos) @andrewconnell          |
-| CONTROLE                   | Julie Turner (Microsoft MVP, consultoria de Sympraxis) @juliemturner |
-| Patrocinador/suporte    | Yina Arenas (Microsoft) @yinaa                                   |
+| Manuais/slides do laboratório | Andrew Connell (Microsoft MVP, Voitanos)@andrewconnell          |
+| CONTROLE                   | Julie Turner (Microsoft MVP, consultoria de Sympraxis)@juliemturner |
+| Patrocinador/suporte    | Yina Arenas (Microsoft)@yinaa                                   |
 
 ## <a name="version-history"></a>Histórico de versão
 
-| Versão |        Data        |                       Comments                       |
+| Versão |        Data        |                       Comentários                       |
 | ------- | ------------------ | ---------------------------------------------------- |
+| 1.7     | 4 de abril de 2018      | atualização de conteúdo do 2019Q3                               |
 | 1.6     | 18 de dezembro de 2018  | atualização de conteúdo do 2019Q2                               |
 | 1,5     | 27 de novembro de 2018  | Integrado ao docs.microsoft.com/graph                |
 | 1.4     | 12 de setembro de 2018 | atualização de conteúdo do 2019Q1                               |

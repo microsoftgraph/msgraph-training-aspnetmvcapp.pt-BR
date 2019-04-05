@@ -1,44 +1,40 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Neste exercício, você criará um novo registro de aplicativo Web do Azure AD usando o ARP (portal de registro de aplicativo).
-
-1. Abra um navegador e navegue até o [portal de registro do aplicativo](https://apps.dev.microsoft.com). Faça logon usando uma **conta pessoal** (aka: conta da Microsoft) ou **conta corporativa ou de estudante**.
-
-1. Selecione **Adicionar um aplicativo** na parte superior da página.
-
-    > [!NOTE]
-    > Se você vir mais de um botão **Adicionar um aplicativo** na página, selecione aquele que corresponde à lista **aplicativos convergidos** .
-
-1. Na página **registrar seu aplicativo** , defina o **nome do aplicativo** como **tutorial de gráfico do ASP.net** e selecione **criar**.
-
-    ![Captura de tela da criação de um novo aplicativo no site do portal de registro de aplicativo](./images/arp-create-app-01.png)
-
-1. Na página **registro do tutorial do ASP.net Graph** , na seção **Propriedades** , copie a **ID do aplicativo** , pois você precisará dela mais tarde.
-
-    ![Captura de tela da ID do aplicativo recém-criado](./images/arp-create-app-02.png)
-
-1. Role para baixo até a seção **segredos do aplicativo** .
-
-    1. Selecione **gerar nova senha**.
-    1. Na caixa de diálogo **nova senha gerada** , copie o conteúdo da caixa, pois você precisará dela mais tarde.
-
-        > **Importante:** Essa senha nunca é mostrada novamente, portanto, certifique-se de copiá-la agora.
-
-    ![Captura de tela da senha do aplicativo recém-criado](./images/arp-create-app-03.png)
+Neste exercício, você criará um novo registro de aplicativo Web do Azure AD usando o centro de administração do Azure Active Directory.
 
 1. Determine a URL do seu aplicativo do ASP.NET. No Gerenciador de soluções do Visual Studio, selecione o projeto do **tutorial de gráfico** . Na janela **Propriedades** , localize o valor da **URL**. Copie esse valor.
 
     ![Captura de tela da janela Propriedades do Visual Studio](./images/vs-project-url.png)
 
-1. Role para baixo até a seção **plataformas** .
+1. Abra um navegador e navegue até o [centro de administração do Azure Active Directory](https://aad.portal.azure.com). Faça logon usando uma **conta pessoal** (aka: conta da Microsoft) ou **conta corporativa ou de estudante**.
 
-    1. Selecione **Adicionar plataforma**.
-    1. Na caixa de diálogo **Adicionar plataforma** , selecione **Web**.
+1. Selecione **Azure Active Directory** na navegação à esquerda e, em seguida, selecione **registros de aplicativo (visualização)** em **gerenciar**.
 
-        ![Captura de tela criando uma plataforma para o aplicativo](./images/arp-create-app-04.png)
+    ![Uma captura de tela dos registros de aplicativo ](./images/aad-portal-app-registrations.png)
 
-    1. Na caixa plataforma **da Web** , digite a URL que você copiou das propriedades do projeto do Visual Studio para as **URLs**de redirecionamento.
+1. Selecione **novo registro**. Na página **registrar um aplicativo** , defina os valores da seguinte maneira.
 
-        ![Captura de tela da nova plataforma Web adicionada para o aplicativo](./images/arp-create-app-05.png)
+    - Defina **** o nome `ASP.NET Graph Tutorial`como.
+    - Defina os **tipos de conta com suporte** para **contas em qualquer diretório organizacional e contas pessoais da Microsoft**.
+    - Em **URI**de redirecionamento, defina o primeiro menu `Web` suspenso como e defina o valor para a URL do aplicativo ASP.NET que você copiou na etapa 1.
 
-1. Role até a parte inferior da página e selecione **salvar**.
+    ![Uma captura de tela da página registrar um aplicativo](./images/aad-register-an-app.png)
+
+1. Escolha **registrar**. Na página do **Tutorial ASP.net Graph** , copie o valor da **ID do aplicativo (cliente)** e salve-o, você precisará dele na próxima etapa.
+
+    ![Uma captura de tela da ID do aplicativo do novo registro de aplicativo](./images/aad-application-id.png)
+
+1. Selecione **autenticação** em **gerenciar**. Localize a seção **Grant implícita** e habilite os tokens de **ID**. Selecione **Salvar**.
+
+    ![Uma captura de tela da seção Grant implícita](./images/aad-implicit-grant.png)
+
+1. Selecione **certificados & segredos** sob **gerenciar**. Selecione o botão **novo cliente secreto** . Insira um valor em **Descrição** e selecione uma das opções para **expirar** e escolha **Adicionar**.
+
+    ![Uma captura de tela da caixa de diálogo Adicionar um segredo do cliente](./images/aad-new-client-secret.png)
+
+1. Copie o valor de segredo do cliente antes de sair desta página. Você precisará dela na próxima etapa.
+
+    > [!IMPORTANT]
+    > Esse segredo do cliente nunca é mostrado novamente, portanto, certifique-se de copiá-lo agora.
+
+    ![Uma captura de tela do novo segredo do cliente recentemente adicionado](./images/aad-copy-client-secret.png)

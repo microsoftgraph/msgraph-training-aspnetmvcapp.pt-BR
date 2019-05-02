@@ -30,19 +30,19 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 |        Funções         |                            Autor (es)                             |
 | -------------------- | ---------------------------------------------------------------- |
-| Manuais/slides do laboratório | Andrew Connell (Microsoft MVP, Voitanos)@andrewconnell          |
-| CONTROLE                   | Julie Turner (Microsoft MVP, consultoria de Sympraxis)@juliemturner |
-| Patrocinador/suporte    | Yina Arenas (Microsoft)@yinaa                                   |
+| Manuais/slides do laboratório | Andrew Connell (Microsoft MVP, Voitanos) @andrewconnell          |
+| CONTROLE                   | Julie Turner (Microsoft MVP, consultoria de Sympraxis) @juliemturner |
+| Patrocinador/suporte    | Yina Arenas (Microsoft) @yinaa                                   |
 
 ## <a name="version-history"></a>Histórico de versão
 
-| Versão |        Data        |                       Comentários                       |
+| Version |        Data        |                       Comments                       |
 | ------- | ------------------ | ---------------------------------------------------- |
 | 1.7     | 4 de abril de 2018      | atualização de conteúdo do 2019Q3                               |
 | 1.6     | 18 de dezembro de 2018  | atualização de conteúdo do 2019Q2                               |
 | 1,5     | 27 de novembro de 2018  | Integrado ao docs.microsoft.com/graph                |
 | 1.4     | 12 de setembro de 2018 | atualização de conteúdo do 2019Q1                               |
-| 1.3     | 24 de agosto de 2018    | Módulos reVisados para consistência com outros treinamentos. |
+| 1.3     | 24 de agosto de 2018    | Módulos revisados para consistência com outros treinamentos. |
 | 1.2     | 28 de junho de 2018      | O screencast foi adicionado.                                    |
 | 1.1     | 04 de junho de 2018      | Reescrito para usar a orientação mais recente.                    |
 | 1.0     | ~ 24 de novembro de 2017 | Adicione debates de produtos relacionados ao Microsoft Graph.       |

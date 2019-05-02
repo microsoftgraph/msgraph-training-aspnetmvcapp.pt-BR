@@ -81,7 +81,7 @@ ToolTip. js também:
 |:-------|:---------------------------------------------------------------------------------|
 | npm    | `npm install tooltip.js --save`                                                  |
 | PNPM   | `yarn add tooltip.js`                                                            |
-| Bower * | `bower install tooltip.js=https://unpkg.com/tooltip.js --save`                   |
+| Bower* | `bower install tooltip.js=https://unpkg.com/tooltip.js --save`                   |
 | unpkg  | [`https://unpkg.com/tooltip.js`](https://unpkg.com/tooltip.js)                   |
 | cdnjs  | [`https://cdnjs.com/libraries/popper.js`](https://cdnjs.com/libraries/popper.js) |
 
@@ -141,7 +141,7 @@ Um modificador é uma função que é chamada a cada vez que Popper. js precisa 
 Para saber como criar um modificador, [Leia a documentação dos modificadores](docs/_includes/popper-documentation.md#modifiers--object)
 
 
-### <a name="react-vuejs-angular-angularjs-emberjs-etc-integration"></a>ReAgir, Vue. js, angular, AngularJS, Ember. js (etc...) integração
+### <a name="react-vuejs-angular-angularjs-emberjs-etc-integration"></a>Reagir, Vue. js, angular, AngularJS, Ember. js (etc...) integração
 
 A integração de bibliotecas de terceiros em reagir ou outras bibliotecas pode ser um problema porque elas geralmente alteram o DOM e orientam as bibliotecas.  
 Popper. js limita todas as suas modificações de DOM `applyStyle` dentro do modificador, basta desabilitá-lo e aplicar manualmente as coordenadas do Popper usando sua biblioteca de opções.  

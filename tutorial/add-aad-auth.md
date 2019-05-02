@@ -519,6 +519,6 @@ Clique no avatar do usuário no canto superior direito para acessar o **** link 
 
 Nesse ponto, seu aplicativo tem um token de acesso, que é enviado no `Authorization` cabeçalho das chamadas de API. Este é o token que permite que o aplicativo acesse o Microsoft Graph em nome do usuário.
 
-No enTanto, esse token é de vida curta. O token expira uma hora após sua emissão. É onde o token de atualização se torna útil. O token de atualização permite que o aplicativo solicite um novo token de acesso sem exigir que o usuário entre novamente.
+No entanto, esse token é de vida curta. O token expira uma hora após sua emissão. É onde o token de atualização se torna útil. O token de atualização permite que o aplicativo solicite um novo token de acesso sem exigir que o usuário entre novamente.
 
 Como o aplicativo está usando a biblioteca do MSAL e `TokenCache` um objeto, você não precisa implementar uma lógica de atualização de token. O `ConfidentialClientApplication.AcquireTokenSilentAsync` método faz toda a lógica para você. Primeiro ele verifica o token em cache e, se ele não tiver expirado, ele o retornará. Se ele tiver expirado, ele usará o token de atualização em cache para obter um novo. Você usará esse método no módulo a seguir.

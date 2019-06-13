@@ -4,7 +4,7 @@ Este módulo apresentará a você como trabalhar com o SDK do Microsoft Graph .N
 
 ## <a name="lab---build-mvc-apps-with-the-microsoft-graph-net-sdk"></a>Laboratório-criar aplicativos MVC com o SDK do Microsoft Graph .NET
 
-Neste laboratório, você criará um aplicativo MVC do ASP.NET, configurado com o Azure Active Directory (Azure AD) para autorização de & de autenticação, que acessa dados no Office 365 usando o SDK do Microsoft Graph .NET.
+Neste laboratório, você criará um aplicativo MVC do ASP.NET, configurado com o Azure Active Directory (Azure AD) para autenticação & autorização, que acessa dados no Office 365 usando o SDK do Microsoft Graph .NET.
 
 - [Tutorial do Microsoft Graph ASP.NET](https://docs.microsoft.com/graph/training/aspnet-tutorial)
 
@@ -28,16 +28,18 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 ## <a name="contributors"></a>Colaboradores
 
-|        Funções         |                            Autor (es)                             |
-| -------------------- | ---------------------------------------------------------------- |
-| Manuais/slides do laboratório | Andrew Connell (Microsoft MVP, Voitanos) @andrewconnell          |
-| CONTROLE                   | Julie Turner (Microsoft MVP, consultoria de Sympraxis) @juliemturner |
-| Patrocinador/suporte    | Yina Arenas (Microsoft) @yinaa                                   |
+| Funções                | Autor (es)                                                                                     |
+| -------------------- | --------------------------------------------------------------------------------------------- |
+| Manuais/slides do laboratório | Andrew Connell (Microsoft MVP, Voitanos) [@andrewconnell](//github.com/andrewconnell)         |
+| CONTROLE                   | Rob Windsor (Microsoft MVP, grupo PAIT) [@rob-Windsor](//github.com/rob-windsor)              |
+| CONTROLE                   | Julie Turner (Microsoft MVP, consultoria de Sympraxis) [@juliemturner](//github.com/juliemturner) |
+| Patrocinador/suporte    | Yina Arenas (Microsoft) [@yinaa](//github.com/yinaa)                                          |
 
 ## <a name="version-history"></a>Histórico de versão
 
-| Version |        Data        |                       Comments                       |
+| Versão | Data               | Comments                                             |
 | ------- | ------------------ | ---------------------------------------------------- |
+| 1,8     | 29 de maio de 2018       | atualização de conteúdo do 2019Q4                               |
 | 1.7     | 4 de abril de 2018      | atualização de conteúdo do 2019Q3                               |
 | 1.6     | 18 de dezembro de 2018  | atualização de conteúdo do 2019Q2                               |
 | 1,5     | 27 de novembro de 2018  | Integrado ao docs.microsoft.com/graph                |
@@ -49,6 +51,6 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 ## <a name="disclaimer"></a>Aviso de isenção de responsabilidade
 
-**Este código é fornecido *como está* sem garantia de qualquer tipo, seja expressa ou implícita, incluindo quaisquer garantias implícitas de ADEQÜAÇÃO para um propósito específico, comercialização ou não-violação.**
+**Este código é fornecido _como está_ sem garantia de qualquer tipo, seja expressa ou implícita, incluindo quaisquer garantias implícitas de ADEQÜAÇÃO para um propósito específico, comercialização ou não-violação.**
 
 <img src="https://telemetry.sharepointpnp.com/msgraph-training-aspnetmvcapp" />

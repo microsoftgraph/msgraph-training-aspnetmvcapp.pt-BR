@@ -14,6 +14,10 @@ Se você não tem uma conta da Microsoft, há algumas opções para obter uma co
 
 ## <a name="register-a-web-application-with-the-azure-active-directory-admin-center"></a>Registrar um aplicativo Web com o centro de administração do Azure Active Directory
 
+1. Determine a URL de seus aplicativos do ASP.NET. No Gerenciador de soluções do Visual Studio, selecione o projeto do **tutorial de gráfico** . Na janela **Propriedades**, encontre o valor da **URL**. Copie esse valor.
+
+    ![Captura de tela da janela Propriedades do Visual Studio](/tutorial/images/vs-project-url.png)
+
 1. Abra um navegador e navegue até o [centro de administração do Azure Active Directory](https://aad.portal.azure.com). Faça logon usando uma **conta pessoal** (também conhecida como Conta da Microsoft) ou **Conta Corporativa ou de Estudante**.
 
 1. Selecione **Azure Active Directory** na navegação à esquerda e, em seguida, selecione **registros de aplicativo** em **gerenciar**.
@@ -24,7 +28,7 @@ Se você não tem uma conta da Microsoft, há algumas opções para obter uma co
 
     - Defina **Nome** para `ASP.NET Graph Tutorial`.
     - Defina **Tipos de conta com suporte** para **Contas em qualquer diretório organizacional e contas pessoais da Microsoft**.
-    - Em **URI de Redirecionamento**, defina o primeiro menu suspenso para `Web` e defina o valor como `http://localhost:64107/`.
+    - Em **URI de Redirecionamento**, defina o primeiro menu suspenso como `Web` e defina o valor como a URL do aplicativo ASP.NET que você copiou na etapa 1.
 
     ![Uma captura de tela da página registrar um aplicativo](/tutorial/images/aad-register-an-app.png)
 
@@ -52,9 +56,10 @@ Se você não tem uma conta da Microsoft, há algumas opções para obter uma co
 1. Renomear `PrivateSettings.config.example` o `PrivateSettings.config`arquivo para.
 1. Edite `PrivateSettings.config` o arquivo e faça as seguintes alterações.
     1. Substitua `YOUR_APP_ID_HERE` pela **ID do aplicativo** obtida do portal de registro do aplicativo.
-    1. Substitua `YOUR_APP_PASSWORD_HERE` pela senha obtida do portal de registro do aplicativo.
+    1. Substitua `YOUR_APP_PASSWORD_HERE` pelo **segredo do aplicativo** obtido do portal de registro do aplicativo.
+    1. Substitua `PORT` pelo número da porta incluído como parte da URL dos seus aplicativos do ASP.net.
 1. Abra `graph-tutorial.sln` no Visual Studio. No Gerenciador de soluções, clique com o botão direito do mouse na solução do **tutorial do gráfico** e escolha **restaurar pacotes NuGet**.
 
 ## <a name="run-the-sample"></a>Executar o exemplo
 
-No Visual Studio, pressione **F5** ou escolha **depurar > iniciar depuração**.
+No Visual Studio, pressione **F5** ou escolha **depurar > iniciar a depuração**.

@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-Abra o Visual Studio e selecione **arquivo _GT_ novo projeto de >**. Na caixa de diálogo **novo projeto** , faça o seguinte:
+Abra o Visual Studio e selecione **arquivo > novo > projeto**. Na caixa de diálogo **novo projeto** , faça o seguinte:
 
-1. Selecione **modelos _GT_ Visual C# _GT_ Web**.
+1. Selecione **modelos > Visual C# > Web**.
 1. Selecione **ASP.NET Web Application (.NET Framework)**.
 1. Insira o **gráfico-tutorial** para o nome do projeto.
 
@@ -13,7 +13,7 @@ Abra o Visual Studio e selecione **arquivo _GT_ novo projeto de >**. Na caixa de
 
 Selecione **OK**. Na caixa de diálogo **novo projeto de aplicativo Web do ASP.net** , selecione **MVC** (em **ASP.NET 4.7.2 templates**) e clique em **OK**.
 
-Pressione **F5** ou selecione **debug > iniciar depuração**. Se tudo estiver funcionando, seu navegador padrão deverá abrir e exibir uma página padrão do ASP.NET.
+Pressione **F5** ou selecione **debug > iniciar a depuração**. Se tudo estiver funcionando, seu navegador padrão deverá abrir e exibir uma página padrão do ASP.NET.
 
 Antes de prosseguir, atualize o `bootstrap` pacote NuGet e instale alguns pacotes NuGet adicionais que você usará posteriormente.
 
@@ -23,15 +23,15 @@ Antes de prosseguir, atualize o `bootstrap` pacote NuGet e instale alguns pacote
 - [Microsoft. Identity. Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) para solicitar e gerenciar tokens de acesso.
 - [Microsoft. Graph](https://www.nuget.org/packages/Microsoft.Graph/) para fazer chamadas para o Microsoft Graph.
 
-Selecione **ferramentas _GT_ Gerenciador de pacotes do NuGet _GT_ console do Gerenciador de pacotes**. No console do Gerenciador de pacotes, insira os seguintes comandos.
+Selecione **ferramentas > Gerenciador de pacotes do NuGet > console do Gerenciador de pacotes**. No console do Gerenciador de pacotes, insira os seguintes comandos.
 
 ```Powershell
 Update-Package bootstrap
 Install-Package Microsoft.Owin.Host.SystemWeb
 Install-Package Microsoft.Owin.Security.OpenIdConnect
 Install-Package Microsoft.Owin.Security.Cookies
-Install-Package Microsoft.Identity.Client -Version 2.7.0
-Install-Package Microsoft.Graph -Version 1.11.0
+Install-Package Microsoft.Identity.Client -Version 3.0.8
+Install-Package Microsoft.Graph -Version 1.15.0
 ```
 
 Crie uma classe de inicialização OWIN básica. Clique com o botão `graph-tutorial` direito do mouse na pasta no Gerenciador de soluções e escolha **Adicionar > novo item**. Escolha o modelo de **classe de inicialização OWIN** , nomeie `Startup.cs`o arquivo e escolha **Adicionar**.
@@ -40,7 +40,7 @@ Crie uma classe de inicialização OWIN básica. Clique com o botão `graph-tuto
 
 Comece criando um modelo simples para uma mensagem de erro. Você usará esse modelo para mensagens de erro do flash nos modos de exibição do aplicativo.
 
-Clique com o botão direito do mouse na pasta **modelos** no Gerenciador de soluções e escolha **Adicionar classe >...**. Nomeie a classe `Alert` e escolha **Adicionar**. Adicione o código a seguir `Alert.cs`no.
+Clique com o botão direito do mouse na pasta **modelos** no Gerenciador de soluções e escolha **Adicionar > classe...**. Nomeie a classe `Alert` e escolha **Adicionar**. Adicione o código a seguir `Alert.cs`no.
 
 ```cs
 namespace graph_tutorial.Models
@@ -197,7 +197,7 @@ Agora, atualize a página padrão. Abra o `Views/Home/index.cshtml` arquivo e su
 
 Agora, adicione uma função auxiliar para criar `Alert` um e passá-lo para o modo de exibição. Para torná-la facilmente disponível para qualquer controlador criado, defina uma classe de controlador de base.
 
-Clique com o botão direito do mouse na pasta **controladores** no Gerenciador de soluções e escolha **Adicionar controlador de >..**.. Escolha **controlador MVC 5-vazio** e escolha **Adicionar**. Nomeie o controlador `BaseController` e escolha **Adicionar**. Substitua o conteúdo do `BaseController.cs` pelo código a seguir.
+Clique com o botão direito do mouse na pasta **controladores** no Gerenciador de soluções e escolha **Adicionar > controlador...**. Escolha **controlador MVC 5-vazio** e escolha **Adicionar**. Nomeie o controlador `BaseController` e escolha **Adicionar**. Substitua o conteúdo do `BaseController.cs` pelo código a seguir.
 
 ```cs
 using graph_tutorial.Models;

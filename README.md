@@ -24,7 +24,7 @@ Se você só quiser que o exemplo completo seja gerado seguindo este laboratóri
 
 ## <a name="watch-the-module"></a>Assista ao módulo
 
-Este módulo foi gravado e está disponível no canal do Office Development YouTube: [compilar aplicativos MVC com o SDK do Microsoft Graph .net](https://youtu.be/87_gpuFg1Wo)
+Este módulo foi gravado e está disponível no canal do Office Development YouTube: [compilar aplicativos MVC com o SDK do Microsoft Graph .net](https://youtu.be/a2teHZ5WuNc)
 
 ## <a name="contributors"></a>Colaboradores
 
@@ -37,8 +37,9 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 ## <a name="version-history"></a>Histórico de versão
 
-| Versão | Data               | Comments                                             |
+| Versão |        Data        |                       Comments                       |
 | ------- | ------------------ | ---------------------------------------------------- |
+| 1.9     | 18 de junho de 2019      | Leiame atualizado para a gravação de screencast atualizada     |
 | 1,8     | 29 de maio de 2018       | atualização de conteúdo do 2019Q4                               |
 | 1.7     | 4 de abril de 2018      | atualização de conteúdo do 2019Q3                               |
 | 1.6     | 18 de dezembro de 2018  | atualização de conteúdo do 2019Q2                               |

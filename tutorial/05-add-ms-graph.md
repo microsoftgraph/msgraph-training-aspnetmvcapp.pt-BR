@@ -50,9 +50,8 @@ Comece estendendo `GraphHelper` a classe criada no último módulo.
                         .WithClientSecret(appSecret)
                         .Build();
 
-                    string signedInUserId = ClaimsPrincipal.Current.FindFirst(ClaimTypes.NameIdentifier).Value;
-                    var tokenStore = new SessionTokenStore(signedInUserId, HttpContext.Current);
-                    tokenStore.Initialize(idClient.UserTokenCache);
+                    var tokenStore = new SessionTokenStore(idClient.UserTokenCache,
+                            HttpContext.Current, ClaimsPrincipal.Current);
 
                     var accounts = await idClient.GetAccountsAsync();
 
@@ -80,8 +79,8 @@ Comece estendendo `GraphHelper` a classe criada no último módulo.
 1. Criar um controlador para os modos de exibição de calendário. Clique com o botão direito do mouse na pasta **controladores** no Gerenciador de soluções e selecione **Adicionar > controlador...**. Escolha **controlador MVC 5-vazio** e selecione **Adicionar**. Nomeie o controlador `CalendarController` e selecione **Adicionar**. Substitua todo o conteúdo do novo arquivo pelo código a seguir.
 
     ```cs
-    using System;
     using graph_tutorial.Helpers;
+    using System;
     using System.Threading.Tasks;
     using System.Web.Mvc;
 

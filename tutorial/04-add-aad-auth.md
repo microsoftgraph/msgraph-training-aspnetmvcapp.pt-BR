@@ -60,39 +60,39 @@ Inicie inicializando o middleware OWIN para usar a autenticação do Azure AD pa
                 app.UseCookieAuthentication(new CookieAuthenticationOptions());
 
                 app.UseOpenIdConnectAuthentication(
-                  new OpenIdConnectAuthenticationOptions
-                  {
-                      ClientId = appId,
-                      Authority = "https://login.microsoftonline.com/common/v2.0",
-                      Scope = $"openid email profile offline_access {graphScopes}",
-                      RedirectUri = redirectUri,
-                      PostLogoutRedirectUri = redirectUri,
-                      TokenValidationParameters = new TokenValidationParameters
-                      {
-                          // For demo purposes only, see below
-                          ValidateIssuer = false
+                    new OpenIdConnectAuthenticationOptions
+                    {
+                        ClientId = appId,
+                        Authority = "https://login.microsoftonline.com/common/v2.0",
+                        Scope = $"openid email profile offline_access {graphScopes}",
+                        RedirectUri = redirectUri,
+                        PostLogoutRedirectUri = redirectUri,
+                        TokenValidationParameters = new TokenValidationParameters
+                        {
+                            // For demo purposes only, see below
+                            ValidateIssuer = false
 
-                          // In a real multi-tenant app, you would add logic to determine whether the
-                          // issuer was from an authorized tenant
-                          //ValidateIssuer = true,
-                          //IssuerValidator = (issuer, token, tvp) =>
-                          //{
-                          //  if (MyCustomTenantValidation(issuer))
-                          //  {
-                          //    return issuer;
-                          //  }
-                          //  else
-                          //  {
-                          //    throw new SecurityTokenInvalidIssuerException("Invalid issuer");
-                          //  }
-                          //}
-                      },
-                      Notifications = new OpenIdConnectAuthenticationNotifications
-                      {
-                          AuthenticationFailed = OnAuthenticationFailedAsync,
-                          AuthorizationCodeReceived = OnAuthorizationCodeReceivedAsync
-                      }
-                  }
+                            // In a real multi-tenant app, you would add logic to determine whether the
+                            // issuer was from an authorized tenant
+                            //ValidateIssuer = true,
+                            //IssuerValidator = (issuer, token, tvp) =>
+                            //{
+                            //  if (MyCustomTenantValidation(issuer))
+                            //  {
+                            //    return issuer;
+                            //  }
+                            //  else
+                            //  {
+                            //    throw new SecurityTokenInvalidIssuerException("Invalid issuer");
+                            //  }
+                            //}
+                        },
+                        Notifications = new OpenIdConnectAuthenticationNotifications
+                        {
+                            AuthenticationFailed = OnAuthenticationFailedAsync,
+                            AuthorizationCodeReceived = OnAuthorizationCodeReceivedAsync
+                        }
+                    }
                 );
             }
 
@@ -414,7 +414,7 @@ Agora que você pode obter tokens, é hora de implementar uma maneira de armazen
                     var userObjectId = user.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier").Value ??
                         user.FindFirst("oid").Value;
 
-                    var userTenantId = user.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier").Value ??
+                    var userTenantId = user.FindFirst("http://schemas.microsoft.com/identity/claims/tenantid").Value ??
                         user.FindFirst("tid").Value;
 
                     if (!string.IsNullOrEmpty(userObjectId) && !string.IsNullOrEmpty(userTenantId))
@@ -429,10 +429,11 @@ Agora que você pode obter tokens, é hora de implementar uma maneira de armazen
     }
     ```
 
-1. Adicione a seguinte `using` instrução à parte superior do `App_Start/Startup.Auth.cs` arquivo.
+1. Adicione as seguintes `using` instruções à parte superior do `App_Start/Startup.Auth.cs` arquivo.
 
     ```cs
     using graph_tutorial.TokenStorage;
+    using System.Security.Claims;
     ```
 
 1. Substitua a função `OnAuthorizationCodeReceivedAsync` existente pelo seguinte.
@@ -557,7 +558,7 @@ Agora que você pode obter tokens, é hora de implementar uma maneira de armazen
 
     ![Uma captura de tela da Home Page após entrar](./images/add-aad-auth-01.png)
 
-1. Clique no avatar do usuário no canto superior direito para acessar o **** link sair. Clicar **** em sair redefine a sessão e retorna à Home Page.
+1. Clique no avatar do usuário no canto superior direito para **acessar o link sair.** Clicar **em sair** redefine a sessão e retorna à Home Page.
 
     ![Uma captura de tela do menu suspenso com o link sair](./images/add-aad-auth-02.png)
 

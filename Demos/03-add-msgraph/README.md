@@ -4,7 +4,7 @@
 
 Para executar o projeto concluído nessa pasta, você precisará do seguinte:
 
-- [Visual Studio](https://visualstudio.microsoft.com/vs/) instalado em sua máquina de desenvolvimento. Se você não tiver o Visual Studio, visite o link anterior para opções de download. (**Observação:** este tutorial foi escrito com o Visual Studio 2019 versão 16.1.4. As etapas deste guia podem funcionar com outras versões, mas que não foram testadas.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/) instalado em sua máquina de desenvolvimento. Se você não tiver o Visual Studio, visite o link anterior para opções de download. (**Observação:** este tutorial foi escrito com o Visual Studio 2019 versão 16.2.3. As etapas deste guia podem funcionar com outras versões, mas que não foram testadas.
 - Uma conta pessoal da Microsoft com uma caixa de correio no Outlook.com ou uma conta corporativa ou de estudante da Microsoft.
 
 Se você não tem uma conta da Microsoft, há algumas opções para obter uma conta gratuita:

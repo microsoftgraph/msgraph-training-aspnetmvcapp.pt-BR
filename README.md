@@ -10,7 +10,7 @@ Neste laboratório, você criará um aplicativo MVC do ASP.NET, configurado com 
 
 ## <a name="demos"></a>Demonstrações
 
-O [](./Demos) diretório demos neste repositório contém cópias do projeto que correspondem à conclusão de seções individuais do tutorial. Se você só quiser demonstrar uma seção específica do tutorial, você pode começar com a versão da seção anterior.
+O diretório [demos](./Demos) neste repositório contém cópias do projeto que correspondem à conclusão de seções individuais do tutorial. Se você só quiser demonstrar uma seção específica do tutorial, você pode começar com a versão da seção anterior.
 
 - [01-create-app](Demos/01-create-app): concluído [criar um aplicativo Web do ASP.NET MVC](https://docs.microsoft.com/graph/training/aspnet-tutorial?tutorial-step=1)
 - [02-Add-AAD-auth](Demos/02-add-aad-auth): concluído [Adicionar autenticação do Azure ad](https://docs.microsoft.com/graph/training/aspnet-tutorial?tutorial-step=3)
@@ -39,6 +39,7 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 | Versão |        Data        |                       Comments                       |
 | ------- | ------------------ | ---------------------------------------------------- |
+| 1,10    | 9 de setembro de 2019  | atualização de conteúdo do 2020Q1                               |
 | 1.9     | 18 de junho de 2019      | Leiame atualizado para a gravação de screencast atualizada     |
 | 1,8     | 29 de maio de 2018       | atualização de conteúdo do 2019Q4                               |
 | 1.7     | 4 de abril de 2018      | atualização de conteúdo do 2019Q3                               |

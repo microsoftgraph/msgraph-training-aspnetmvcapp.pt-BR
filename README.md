@@ -39,6 +39,7 @@ Este módulo foi gravado e está disponível no canal do Office Development YouT
 
 | Versão |        Data        |                       Comments                       |
 | ------- | ------------------ | ---------------------------------------------------- |
+| 1,11    | 9 de dezembro de 2019   | atualização de conteúdo do 2020Q2                               |
 | 1,10    | 9 de setembro de 2019  | atualização de conteúdo do 2020Q1                               |
 | 1.9     | 18 de junho de 2019      | Leiame atualizado para a gravação de screencast atualizada     |
 | 1,8     | 29 de maio de 2018       | atualização de conteúdo do 2019Q4                               |
